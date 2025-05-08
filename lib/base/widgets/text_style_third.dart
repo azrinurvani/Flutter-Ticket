@@ -9,9 +9,7 @@ class TextStyleThird extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: AppStyles.headLineStyle3.copyWith(
-        color: Colors.white,
-      ),
+      style: AppStyles.headLineStyle3.copyWith(color: Colors.white),
     );
   }
 }
