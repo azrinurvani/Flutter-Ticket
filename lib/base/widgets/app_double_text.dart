@@ -28,9 +28,10 @@ class AppDoubleText extends StatelessWidget {
               color: AppStyles.primaryColor,
             ),
           ),
-          onTap: () {
-            // Handle tap event here
-          },
+          onTap: () => Navigator.pushNamed(
+            context,
+            "/all_tickets",
+          ),
         ),
       ],
     );

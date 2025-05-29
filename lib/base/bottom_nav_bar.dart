@@ -17,7 +17,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     const Center(child: Text("Profile")),
   ];
 
-  //change the index of the Bottom Navigatio Bar
+  //change the index of the Bottom Navigation Bar
   int _selectedIntex = 0;
   void _onItemTapped(int index) {
     _selectedIntex = index;

@@ -90,9 +90,16 @@ class HomeScreen extends StatelessWidget {
                   child: Row(
                     children: ticketList
                         .take(ticketList.length)
-                        .map((singleTicket) => TicketView(ticket:singleTicket))
+                        .map((singleTicket) => TicketView(ticket: singleTicket))
                         .toList(),
                   ),
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                AppDoubleText(
+                  bigText: 'Hotels',
+                  smallText: 'View all',
                 ),
               ],
             ),
