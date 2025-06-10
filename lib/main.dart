@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_app/base/bottom_nav_bar.dart';
+import 'package:ticket_app/base/utils/app_routes.dart';
 import 'package:ticket_app/screens/all_tickets.dart';
 
 void main() {
@@ -14,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) =>
+        AppRoutes.home: (context) =>
             const BottomNavBar(), //only use home property or slash routes for home
-        "/all_tickets": (context) => const AllTickets(),
+        AppRoutes.allTickets: (context) => const AllTickets(),
       },
     );
   }
