@@ -9,11 +9,13 @@ class Hotel extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
+      padding: const EdgeInsets.all(8.0),
       width: size.width * 0.6,
       height: 350,
+      margin: const EdgeInsets.only(right: 16),
       decoration: BoxDecoration(
         color: AppStyles.primaryColor,
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(18),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start, //horizontal alignment
