@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:ticket_app/screens/home_screen.dart';
+import 'package:ticket_app/screens/home/home_screen.dart';
+import 'package:ticket_app/screens/search/search_screen.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
@@ -12,7 +13,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   final appScreens = [
     const HomeScreen(),
-    const Center(child: Text("Search")),
+    const SearchScreen(),
     const Center(child: Text("Tickets")),
     const Center(child: Text("Profile")),
   ];
@@ -29,7 +30,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     
       body: appScreens[_selectedIntex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _onItemTapped,
